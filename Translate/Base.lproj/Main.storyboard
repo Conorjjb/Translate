@@ -50,7 +50,7 @@
                                 <rect key="frame" x="51" y="354" width="450" height="68"/>
                                 <animations/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="349" width="360" height="68"/>
+                                    <rect key="frame" x="14" y="339" width="360" height="156"/>
                                 </variation>
                             </pickerView>
                         </subviews>

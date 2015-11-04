@@ -8,18 +8,36 @@
 
 import UIKit
 
+var french = "en|fr"
+var irish = "en|ga"
+var turkish = "en|tr"
+var hindi = "en|hi"
+var language = ""
+
 class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataSource {
     
     
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var textToTranslate: UITextView!
     @IBOutlet weak var translatedText: UITextView!
+    var images: [UIImage] = []
+    let max = 4
     
     var pickerData: [String] = [String]()
     
     override func viewDidLoad(){
+        print("viewDidLoad")
         super.viewDidLoad()
-        
+         var France = UIImage(named: "France")
+         var Ireland = UIImage(named: "Ireland")
+         var Turkey = UIImage(named: "Turkey")
+         var India = UIImage(named: "India")
+         images.append(France!)
+         images.append(Ireland!)
+         images.append(Turkey!)
+         images.append(India!)
+    
+    
     // Connect Data
         self.picker.delegate = self
         self.picker.dataSource = self
@@ -43,7 +61,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
     
     //number of rows
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return max
 
     }
     
@@ -52,12 +70,55 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         return pickerData[row]
     }
     
+    //capture the picker view selection
+    func pickerView(pickerView: UIPickerView, var didSelectRow row: Int, inComponent component: Int) {
+        print("component: \(component), row: \(row)")
+        
+        if row == 0{
+            language = french
+        }
+        if row == 1{
+            language = irish
+        }
+        
+        if row == 2{
+            language = turkish
+        }
+        
+        if row == 3{
+            language = hindi
+        }
+
+
+        
+        
+    }
+    
+    //viewForRow
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    
+        print("pickerView")
+        var imageView:UIImageView
+        
+        if(view == nil){
+        var image = images [row % 4]
+        imageView = UIImageView()
+            imageView.image = image;
+            imageView.frame = CGRectMake(0,0,30,30)
+            imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        }else{
+            imageView = UIImageView()
+            
+        }
+        return imageView
+    }
+    
     @IBAction func translate(sender: AnyObject) {
         
         let str = textToTranslate.text
         let escapedStr = str.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         
-        let langStr = ("en|fr").stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        let langStr = (language).stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         
         let urlStr:String = ("http://api.mymemory.translated.net/get?q="+escapedStr!+"&langpair="+langStr!)
         

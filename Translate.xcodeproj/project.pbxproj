@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E49541E91BEA9CB7001BF9A8 /* India.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541E81BEA9CB7001BF9A8 /* India.png */; settings = {ASSET_TAGS = (); }; };
+		E49541ED1BEA9CC8001BF9A8 /* Turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541EC1BEA9CC8001BF9A8 /* Turkey.png */; settings = {ASSET_TAGS = (); }; };
+		E49541F91BEAA323001BF9A8 /* Ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541F81BEAA323001BF9A8 /* Ireland.png */; settings = {ASSET_TAGS = (); }; };
+		E49541FB1BEAA373001BF9A8 /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541FA1BEAA373001BF9A8 /* France.png */; settings = {ASSET_TAGS = (); }; };
 		FFD2F9B71BD1101A00F54057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */; };
 		FFD2F9B91BD1101A00F54057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2F9B81BD1101A00F54057 /* ViewController.swift */; };
 		FFD2F9BC1BD1101A00F54057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD2F9BA1BD1101A00F54057 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E49541E81BEA9CB7001BF9A8 /* India.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = India.png; path = ../../India.png; sourceTree = "<group>"; };
+		E49541EC1BEA9CC8001BF9A8 /* Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Turkey.png; path = ../../Turkey.png; sourceTree = "<group>"; };
+		E49541F81BEAA323001BF9A8 /* Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ireland.png; path = ../Ireland.png; sourceTree = "<group>"; };
+		E49541FA1BEAA373001BF9A8 /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = France.png; path = ../../France.png; sourceTree = "<group>"; };
 		FFD2F9B31BD1101A00F54057 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD2F9B81BD1101A00F54057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +46,7 @@
 		FFD2F9AA1BD1101A00F54057 = {
 			isa = PBXGroup;
 			children = (
+				E49541F81BEAA323001BF9A8 /* Ireland.png */,
 				FFD2F9B51BD1101A00F54057 /* Translate */,
 				FFD2F9B41BD1101A00F54057 /* Products */,
 			);
@@ -54,8 +63,11 @@
 		FFD2F9B51BD1101A00F54057 /* Translate */ = {
 			isa = PBXGroup;
 			children = (
+				E49541FA1BEAA373001BF9A8 /* France.png */,
 				FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */,
 				FFD2F9B81BD1101A00F54057 /* ViewController.swift */,
+				E49541EC1BEA9CC8001BF9A8 /* Turkey.png */,
+				E49541E81BEA9CB7001BF9A8 /* India.png */,
 				FFD2F9BA1BD1101A00F54057 /* Main.storyboard */,
 				FFD2F9BD1BD1101A00F54057 /* Assets.xcassets */,
 				FFD2F9BF1BD1101A00F54057 /* LaunchScreen.storyboard */,
@@ -121,9 +133,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49541F91BEAA323001BF9A8 /* Ireland.png in Resources */,
 				FFD2F9C11BD1101A00F54057 /* LaunchScreen.storyboard in Resources */,
 				FFD2F9BE1BD1101A00F54057 /* Assets.xcassets in Resources */,
+				E49541FB1BEAA373001BF9A8 /* France.png in Resources */,
 				FFD2F9BC1BD1101A00F54057 /* Main.storyboard in Resources */,
+				E49541E91BEA9CB7001BF9A8 /* India.png in Resources */,
+				E49541ED1BEA9CC8001BF9A8 /* Turkey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +301,7 @@
 				FFD2F9C71BD1101A00F54057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
