@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		E49541E81BEA9CB7001BF9A8 /* India.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = India.png; path = ../../India.png; sourceTree = "<group>"; };
 		E49541EC1BEA9CC8001BF9A8 /* Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Turkey.png; path = ../../Turkey.png; sourceTree = "<group>"; };
-		E49541F81BEAA323001BF9A8 /* Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ireland.png; path = ../Ireland.png; sourceTree = "<group>"; };
+		E49541F81BEAA323001BF9A8 /* Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ireland.png; path = ../../Ireland.png; sourceTree = "<group>"; };
 		E49541FA1BEAA373001BF9A8 /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = France.png; path = ../../France.png; sourceTree = "<group>"; };
 		FFD2F9B31BD1101A00F54057 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,6 @@
 		FFD2F9AA1BD1101A00F54057 = {
 			isa = PBXGroup;
 			children = (
-				E49541F81BEAA323001BF9A8 /* Ireland.png */,
 				FFD2F9B51BD1101A00F54057 /* Translate */,
 				FFD2F9B41BD1101A00F54057 /* Products */,
 			);
@@ -63,6 +62,7 @@
 		FFD2F9B51BD1101A00F54057 /* Translate */ = {
 			isa = PBXGroup;
 			children = (
+				E49541F81BEAA323001BF9A8 /* Ireland.png */,
 				E49541FA1BEAA373001BF9A8 /* France.png */,
 				FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */,
 				FFD2F9B81BD1101A00F54057 /* ViewController.swift */,

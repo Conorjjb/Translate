@@ -12,7 +12,9 @@ var french = "en|fr"
 var irish = "en|ga"
 var turkish = "en|tr"
 var hindi = "en|hi"
-var language = ""
+var language = french
+
+
 
 class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataSource {
     
@@ -48,7 +50,6 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
 
     //var data = NSMutableData()
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -77,15 +78,15 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         if row == 0{
             language = french
         }
-        if row == 1{
+       else if row == 1{
             language = irish
         }
         
-        if row == 2{
+        else if row == 2{
             language = turkish
         }
         
-        if row == 3{
+        else if row == 3{
             language = hindi
         }
 
