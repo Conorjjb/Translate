@@ -46,6 +46,13 @@
                                     <action selector="translate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGZ-k7-S6x"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rr8-C5-SB7">
+                                <rect key="frame" x="51" y="354" width="450" height="68"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="349" width="360" height="68"/>
+                                </variation>
+                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,6 +68,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="picker" destination="Rr8-C5-SB7" id="ftG-mZ-aZm"/>
                         <outlet property="textToTranslate" destination="dii-Vg-90N" id="YUb-1O-ReK"/>
                         <outlet property="translatedText" destination="LaV-KV-DTJ" id="oc5-YH-HYb"/>
                     </connections>
