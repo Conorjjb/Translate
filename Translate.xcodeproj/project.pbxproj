@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E49541E91BEA9CB7001BF9A8 /* India.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541E81BEA9CB7001BF9A8 /* India.png */; settings = {ASSET_TAGS = (); }; };
-		E49541ED1BEA9CC8001BF9A8 /* Turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541EC1BEA9CC8001BF9A8 /* Turkey.png */; settings = {ASSET_TAGS = (); }; };
-		E49541F91BEAA323001BF9A8 /* Ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541F81BEAA323001BF9A8 /* Ireland.png */; settings = {ASSET_TAGS = (); }; };
-		E49541FB1BEAA373001BF9A8 /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = E49541FA1BEAA373001BF9A8 /* France.png */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC501BEB805B00EFDA92 /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC471BEB805B00EFDA92 /* France.png */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC511BEB805B00EFDA92 /* French.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC481BEB805B00EFDA92 /* French.jpg */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC521BEB805B00EFDA92 /* India.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC491BEB805B00EFDA92 /* India.png */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC531BEB805B00EFDA92 /* indian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC4A1BEB805B00EFDA92 /* indian.jpg */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC541BEB805B00EFDA92 /* Ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC4B1BEB805B00EFDA92 /* Ireland.png */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC551BEB805B00EFDA92 /* irish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC4C1BEB805B00EFDA92 /* irish.jpg */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC561BEB805B00EFDA92 /* Turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC4D1BEB805B00EFDA92 /* Turkey.png */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC571BEB805B00EFDA92 /* turkish.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC4E1BEB805B00EFDA92 /* turkish.png */; settings = {ASSET_TAGS = (); }; };
+		E4D1EC581BEB805B00EFDA92 /* world.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D1EC4F1BEB805B00EFDA92 /* world.jpg */; settings = {ASSET_TAGS = (); }; };
 		FFD2F9B71BD1101A00F54057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */; };
 		FFD2F9B91BD1101A00F54057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2F9B81BD1101A00F54057 /* ViewController.swift */; };
 		FFD2F9BC1BD1101A00F54057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD2F9BA1BD1101A00F54057 /* Main.storyboard */; };
@@ -19,10 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E49541E81BEA9CB7001BF9A8 /* India.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = India.png; path = ../../India.png; sourceTree = "<group>"; };
-		E49541EC1BEA9CC8001BF9A8 /* Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Turkey.png; path = ../../Turkey.png; sourceTree = "<group>"; };
-		E49541F81BEAA323001BF9A8 /* Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ireland.png; path = ../../Ireland.png; sourceTree = "<group>"; };
-		E49541FA1BEAA373001BF9A8 /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = France.png; path = ../../France.png; sourceTree = "<group>"; };
+		E4D1EC471BEB805B00EFDA92 /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = France.png; path = Assets.xcassets/France.png; sourceTree = "<group>"; };
+		E4D1EC481BEB805B00EFDA92 /* French.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = French.jpg; path = Assets.xcassets/French.jpg; sourceTree = "<group>"; };
+		E4D1EC491BEB805B00EFDA92 /* India.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = India.png; path = Assets.xcassets/India.png; sourceTree = "<group>"; };
+		E4D1EC4A1BEB805B00EFDA92 /* indian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = indian.jpg; path = Assets.xcassets/indian.jpg; sourceTree = "<group>"; };
+		E4D1EC4B1BEB805B00EFDA92 /* Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ireland.png; path = Assets.xcassets/Ireland.png; sourceTree = "<group>"; };
+		E4D1EC4C1BEB805B00EFDA92 /* irish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = irish.jpg; path = Assets.xcassets/irish.jpg; sourceTree = "<group>"; };
+		E4D1EC4D1BEB805B00EFDA92 /* Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Turkey.png; path = Assets.xcassets/Turkey.png; sourceTree = "<group>"; };
+		E4D1EC4E1BEB805B00EFDA92 /* turkish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turkish.png; path = Assets.xcassets/turkish.png; sourceTree = "<group>"; };
+		E4D1EC4F1BEB805B00EFDA92 /* world.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = world.jpg; path = Assets.xcassets/world.jpg; sourceTree = "<group>"; };
 		FFD2F9B31BD1101A00F54057 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD2F9B81BD1101A00F54057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,12 +72,17 @@
 		FFD2F9B51BD1101A00F54057 /* Translate */ = {
 			isa = PBXGroup;
 			children = (
-				E49541F81BEAA323001BF9A8 /* Ireland.png */,
-				E49541FA1BEAA373001BF9A8 /* France.png */,
+				E4D1EC471BEB805B00EFDA92 /* France.png */,
+				E4D1EC481BEB805B00EFDA92 /* French.jpg */,
+				E4D1EC491BEB805B00EFDA92 /* India.png */,
+				E4D1EC4A1BEB805B00EFDA92 /* indian.jpg */,
+				E4D1EC4B1BEB805B00EFDA92 /* Ireland.png */,
+				E4D1EC4C1BEB805B00EFDA92 /* irish.jpg */,
+				E4D1EC4D1BEB805B00EFDA92 /* Turkey.png */,
+				E4D1EC4E1BEB805B00EFDA92 /* turkish.png */,
+				E4D1EC4F1BEB805B00EFDA92 /* world.jpg */,
 				FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */,
 				FFD2F9B81BD1101A00F54057 /* ViewController.swift */,
-				E49541EC1BEA9CC8001BF9A8 /* Turkey.png */,
-				E49541E81BEA9CB7001BF9A8 /* India.png */,
 				FFD2F9BA1BD1101A00F54057 /* Main.storyboard */,
 				FFD2F9BD1BD1101A00F54057 /* Assets.xcassets */,
 				FFD2F9BF1BD1101A00F54057 /* LaunchScreen.storyboard */,
@@ -133,13 +148,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E49541F91BEAA323001BF9A8 /* Ireland.png in Resources */,
+				E4D1EC581BEB805B00EFDA92 /* world.jpg in Resources */,
+				E4D1EC551BEB805B00EFDA92 /* irish.jpg in Resources */,
 				FFD2F9C11BD1101A00F54057 /* LaunchScreen.storyboard in Resources */,
 				FFD2F9BE1BD1101A00F54057 /* Assets.xcassets in Resources */,
-				E49541FB1BEAA373001BF9A8 /* France.png in Resources */,
+				E4D1EC511BEB805B00EFDA92 /* French.jpg in Resources */,
+				E4D1EC531BEB805B00EFDA92 /* indian.jpg in Resources */,
+				E4D1EC501BEB805B00EFDA92 /* France.png in Resources */,
+				E4D1EC571BEB805B00EFDA92 /* turkish.png in Resources */,
 				FFD2F9BC1BD1101A00F54057 /* Main.storyboard in Resources */,
-				E49541E91BEA9CB7001BF9A8 /* India.png in Resources */,
-				E49541ED1BEA9CC8001BF9A8 /* Turkey.png in Resources */,
+				E4D1EC541BEB805B00EFDA92 /* Ireland.png in Resources */,
+				E4D1EC521BEB805B00EFDA92 /* India.png in Resources */,
+				E4D1EC561BEB805B00EFDA92 /* Turkey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
