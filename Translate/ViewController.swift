@@ -30,6 +30,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
     override func viewDidLoad(){
         print("viewDidLoad")
         super.viewDidLoad()
+        
          var France = UIImage(named: "France")
          var Ireland = UIImage(named: "Ireland")
          var Turkey = UIImage(named: "Turkey")
@@ -38,8 +39,9 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
          images.append(Ireland!)
          images.append(Turkey!)
          images.append(India!)
-    
-    
+   
+       //CozyLoadingActivity.show("Loading...", sender: self, disableUI: true)
+        
     // Connect Data
         self.picker.delegate = self
         self.picker.dataSource = self
@@ -95,6 +97,13 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         
     }
     
+   
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
+    
     //viewForRow
     func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
     
@@ -114,6 +123,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         return imageView
     }
     
+  
     @IBAction func translate(sender: AnyObject) {
         
         let str = textToTranslate.text
@@ -129,16 +139,17 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         
         //var data = NSMutableData()var data = NSMutableData()
         
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        /*let indicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
         indicator.center = view.center
         view.addSubview(indicator)
-        indicator.startAnimating()
+        indicator.startAnimating()*/
         
+        CozyLoadingActivity.show("Loading...", sender: self, disableUI: true)
         var result = "<Translation Error>"
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { response, data, error in
             
-            indicator.stopAnimating()
+           CozyLoadingActivity.hide(success: true, animated: true)
             
             if let httpResponse = response as? NSHTTPURLResponse {
                 if(httpResponse.statusCode == 200){
