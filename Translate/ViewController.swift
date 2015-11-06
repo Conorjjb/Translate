@@ -134,6 +134,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
     
     @IBAction func sendHello(sender: AnyObject) {
         textToTranslate.text = "Hello"
+        
     }
     
     @IBAction func sendHowAreYou(sender: AnyObject) {
