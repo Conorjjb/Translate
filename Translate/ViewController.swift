@@ -79,17 +79,21 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         
         if row == 0{
             language = french
+            translate(french)
         }
        else if row == 1{
             language = irish
+            translate(irish)
         }
         
         else if row == 2{
             language = turkish
+            translate(turkish)
         }
         
         else if row == 3{
             language = hindi
+            translate(hindi)
         }
 
 
