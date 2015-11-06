@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Translated Text Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-KV-DTJ">
-                                <rect key="frame" x="28" y="257" width="560" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Translated Text Here" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-KV-DTJ">
+                                <rect key="frame" x="20" y="238" width="560" height="124"/>
                                 <animations/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
@@ -34,49 +34,113 @@
                                 </connections>
                             </button>
                             <pickerView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rr8-C5-SB7">
-                                <rect key="frame" x="50" y="416" width="450" height="68"/>
+                                <rect key="frame" x="222" y="370" width="126" height="68"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="2py-cj-Hne"/>
+                                    <constraint firstAttribute="width" constant="126" id="99a-pM-Ksw"/>
                                 </constraints>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="337" width="400" height="156"/>
                                 </variation>
                             </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Text to Translate" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dii-Vg-90N">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5V9-To-46c">
                                 <rect key="frame" x="20" y="84" width="560" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GTC-Go-tXY">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="128"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Text to Translate" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dii-Vg-90N">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="0.034138657980459786" green="0.80362713735066371" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes" keyboardAppearance="light"/>
+                                            </textView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.034138657980459786" green="0.80362713735066371" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v5-JJ-4VU">
+                                <rect key="frame" x="20" y="455" width="46" height="30"/>
+                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="vLl-OI-qj6"/>
+                                    <constraint firstAttribute="width" constant="46" id="jVf-wF-Sfy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes" keyboardAppearance="light"/>
-                            </textView>
+                                <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="sendHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8VS-ZN-SKB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1if-vZ-xW3">
+                                <rect key="frame" x="105" y="460" width="115" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="sNk-6n-UMt"/>
+                                </constraints>
+                                <state key="normal" title="How are you?"/>
+                                <connections>
+                                    <action selector="sendHowAreYou:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGl-Mj-2it"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6po-m3-ce2">
+                                <rect key="frame" x="20" y="498" width="96" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="n0t-Of-Nr2"/>
+                                </constraints>
+                                <state key="normal" title="My name is"/>
+                                <connections>
+                                    <action selector="sendMyNameIs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hxc-jh-lus"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjk-LB-q3q">
+                                <rect key="frame" x="124" y="498" width="71" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="Ish-Jz-jLI"/>
+                                </constraints>
+                                <state key="normal" title="Where is"/>
+                                <connections>
+                                    <action selector="sendWhereIs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSL-GY-8fI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LaV-KV-DTJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="0Sp-JX-GWy"/>
-                            <constraint firstItem="Rr8-C5-SB7" firstAttribute="top" secondItem="LaV-KV-DTJ" secondAttribute="bottom" constant="31" id="3xd-nj-qmT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LaV-KV-DTJ" secondAttribute="trailing" constant="-8" id="4Ig-aR-6iT"/>
-                            <constraint firstItem="Tk9-7M-DEK" firstAttribute="top" secondItem="Rr8-C5-SB7" secondAttribute="bottom" constant="66" id="F5I-EI-dvN"/>
-                            <constraint firstAttribute="bottom" secondItem="Tk9-7M-DEK" secondAttribute="bottom" constant="20" symbolic="YES" id="KTW-63-6ii"/>
-                            <constraint firstItem="dii-Vg-90N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QEC-6l-nX8"/>
-                            <constraint firstItem="dii-Vg-90N" firstAttribute="centerX" secondItem="Tk9-7M-DEK" secondAttribute="centerX" id="UxQ-l9-V5m"/>
-                            <constraint firstItem="Rr8-C5-SB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="dNA-a1-sHc"/>
-                            <constraint firstItem="dii-Vg-90N" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lb7-ie-QUy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rr8-C5-SB7" secondAttribute="trailing" constant="80" id="ndU-CC-BDz"/>
-                            <constraint firstItem="LaV-KV-DTJ" firstAttribute="top" secondItem="dii-Vg-90N" secondAttribute="bottom" constant="45" id="ofV-rn-xql"/>
-                            <constraint firstItem="dii-Vg-90N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pzW-Pd-QbX"/>
+                            <constraint firstItem="LaV-KV-DTJ" firstAttribute="top" secondItem="5V9-To-46c" secondAttribute="bottom" constant="26" id="1zS-6h-BVJ"/>
+                            <constraint firstItem="LaV-KV-DTJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5mH-Eo-uE5"/>
+                            <constraint firstItem="6po-m3-ce2" firstAttribute="top" secondItem="5v5-JJ-4VU" secondAttribute="bottom" constant="8" symbolic="YES" id="8S5-CE-Tmb"/>
+                            <constraint firstItem="5V9-To-46c" firstAttribute="leading" secondItem="LaV-KV-DTJ" secondAttribute="leading" id="8zR-ug-ZuQ"/>
+                            <constraint firstItem="1if-vZ-xW3" firstAttribute="top" secondItem="LaV-KV-DTJ" secondAttribute="bottom" constant="93" id="KDW-VW-CZW"/>
+                            <constraint firstItem="6po-m3-ce2" firstAttribute="trailing" secondItem="5v5-JJ-4VU" secondAttribute="trailing" id="KgH-FO-Zw5"/>
+                            <constraint firstItem="LaV-KV-DTJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N1a-xF-SPS"/>
+                            <constraint firstItem="Kjk-LB-q3q" firstAttribute="top" secondItem="1if-vZ-xW3" secondAttribute="bottom" constant="13" id="Nva-nT-vG0"/>
+                            <constraint firstItem="5v5-JJ-4VU" firstAttribute="top" secondItem="Rr8-C5-SB7" secondAttribute="bottom" constant="17" id="PV7-ff-z0x"/>
+                            <constraint firstItem="1if-vZ-xW3" firstAttribute="leading" secondItem="5v5-JJ-4VU" secondAttribute="trailing" constant="98" id="Taj-VS-SQo"/>
+                            <constraint firstItem="5V9-To-46c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="U2S-Nf-Vr3"/>
+                            <constraint firstAttribute="bottom" secondItem="Tk9-7M-DEK" secondAttribute="bottom" constant="20" symbolic="YES" id="YWo-L4-SEA"/>
+                            <constraint firstItem="Rr8-C5-SB7" firstAttribute="top" secondItem="LaV-KV-DTJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Z4B-Ta-cf3"/>
+                            <constraint firstItem="Kjk-LB-q3q" firstAttribute="leading" secondItem="1if-vZ-xW3" secondAttribute="leading" id="hWl-Sv-cbp"/>
+                            <constraint firstItem="6po-m3-ce2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="153" id="iP1-O0-SP4"/>
+                            <constraint firstItem="LaV-KV-DTJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iml-Fp-pbZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kjk-LB-q3q" secondAttribute="bottom" constant="72" id="jWO-V7-Jk4"/>
+                            <constraint firstItem="Rr8-C5-SB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="222" id="l7q-Jz-XTa"/>
+                            <constraint firstItem="5V9-To-46c" firstAttribute="trailing" secondItem="LaV-KV-DTJ" secondAttribute="trailing" id="oRw-es-cGz"/>
+                            <constraint firstItem="Tk9-7M-DEK" firstAttribute="centerX" secondItem="LaV-KV-DTJ" secondAttribute="centerX" id="q16-MV-3xd"/>
+                            <constraint firstItem="1if-vZ-xW3" firstAttribute="top" secondItem="5v5-JJ-4VU" secondAttribute="top" id="rDi-kH-Nyw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text Translator" id="pfG-Vt-lYH"/>
                     <connections>
+                        <outlet property="hello" destination="5v5-JJ-4VU" id="hTY-bb-iD7"/>
                         <outlet property="picker" destination="Rr8-C5-SB7" id="ftG-mZ-aZm"/>
                         <outlet property="textToTranslate" destination="dii-Vg-90N" id="YUb-1O-ReK"/>
                         <outlet property="translatedText" destination="LaV-KV-DTJ" id="oc5-YH-HYb"/>
+                        <outlet property="whereIs" destination="Kjk-LB-q3q" id="cAI-s9-hhB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

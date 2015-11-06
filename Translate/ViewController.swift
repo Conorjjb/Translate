@@ -22,6 +22,10 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var textToTranslate: UITextView!
     @IBOutlet weak var translatedText: UITextView!
+    @IBOutlet weak var hello: UIButton!
+    @IBOutlet weak var howAreYou: UIButton!
+    @IBOutlet weak var myNameIs: UIButton!
+    @IBOutlet weak var whereIs: UIButton!
     var images: [UIImage] = []
     let max = 4
     
@@ -127,6 +131,21 @@ class ViewController: UIViewController, UIPickerViewDelegate,  UIPickerViewDataS
         return imageView
     }
     
+    
+    @IBAction func sendHello(sender: AnyObject) {
+        textToTranslate.text = "Hello"
+    }
+    
+    @IBAction func sendHowAreYou(sender: AnyObject) {
+        textToTranslate.text = "How are you"
+    }
+    @IBAction func sendMyNameIs(sender: AnyObject) {
+        textToTranslate.text = "My name is"
+    }
+    
+    @IBAction func sendWhereIs(sender: AnyObject) {
+        textToTranslate.text = "Where is"
+    }
   
     @IBAction func translate(sender: AnyObject) {
         
